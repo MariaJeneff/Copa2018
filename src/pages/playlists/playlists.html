@@ -1,0 +1,31 @@
+
+<ion-header>
+
+  <ion-navbar color="darken-4">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>PlayLists</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div class="user">
+    <ion-avatar>
+      <img src="{{ user.picture }}" alt="">
+    </ion-avatar>
+    <h1>{{ user.name }}</h1>
+  </div>
+  <ion-list>
+
+    <ion-item (click)="goToPlayLists(p)" *ngFor="let p of playlists">
+      <ion-thumbnail item-left>
+        <img class="img" src="{{ p.picture }}" alt="">
+      </ion-thumbnail>
+      <h2>{{ p.title }}</h2>
+      <p>{{ p.nb_tracks }} Músicas</p>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

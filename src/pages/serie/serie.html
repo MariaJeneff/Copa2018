@@ -1,0 +1,32 @@
+<!--
+  Generated template for the SeriePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="darken-4">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Grey's Anatomy</ion-title>
+    </ion-navbar> 
+  </ion-header>
+
+  <ion-content class="home">
+    <br>
+    <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
+    <!-- <button style="max-width: 150px; margin-left: 80px; background:black;" ion-button full icon-left type="button" (click)="sort()">
+      <ion-icon name="shuffle"></ion-icon>
+      Sort</button> -->
+
+    <ion-list>
+        <ion-item (click)="getDetail(episode.id)" *ngFor="let episode of result | search : terms | sort: { property: column, order: order }">
+         <ion-avatar item-left *ngIf="episode.image != null">
+           <img src="{{ episode.image.medium }}">
+         </ion-avatar>
+         <h2><b>{{ episode.name }}</b></h2>
+       </ion-item> 
+     </ion-list>
+   
+</ion-content>

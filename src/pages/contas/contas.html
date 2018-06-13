@@ -1,0 +1,30 @@
+<!--
+  Generated template for the ContasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="darken-4">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Contas
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let d of dados"> 
+      <h2 style="color:#069; text-align: center"> {{ d.nome }} </h2>
+      <h3><b>Email: </b>{{ d.email }} </h3>
+      <h3><b>Sexo: </b> {{ d.sexo }} </h3>
+      <h3><b>Senha: </b> {{ d.senha }} </h3>
+    </ion-item>
+  </ion-list>
+</ion-content>

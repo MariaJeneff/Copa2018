@@ -1,0 +1,85 @@
+<!--
+  Generated template for the VercopaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="darken-4">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Palpites
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let n of dados">
+        <h1 style="color:darkgreen; text-align: center"> <b>{{ n.nome }}</b> </h1> 
+      <h2 style="color:#069; text-align: center"> <b>Grupo A</b> </h2>
+      <h3><b>Rússia         </b> <b style="color:#006064">{{ n.ra }}</b>  <b>Arábia Saudita</b></h3>
+      <h3><b>Egito          </b> <b style="color:#006064">{{ n.eu }}</b>  <b>Uruguai </b></h3>
+      <h3><b>Rússia         </b> <b style="color:#006064">{{ n.re }}</b>  <b>Egito </b></h3>
+      <h3><b>Uruguai        </b> <b style="color:#006064">{{ n.ua }}</b>  <b>Arábia Saudita </b></h3>
+      <h3><b>Arábia Saudita </b> <b style="color:#006064">{{ n.ae }}</b>  <b>Egito </b></h3>
+      <h3><b>Uruguai        </b> <b style="color:#006064">{{ n.ur }}</b>  <b>Rússia </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo B</b> </h2>
+      <h3><b>Marrocos       </b> <b style="color:#006064">{{ n.ma }}</b>  <b>Irã </b></h3>
+      <h3><b>Portugal       </b> <b style="color:#006064">{{ n.pe }}</b>  <b>Espanha </b></h3>
+      <h3><b>Portugal       </b> <b style="color:#006064">{{ n.pm }}</b>  <b>Marrocos </b></h3>
+      <h3><b>Irã            </b> <b style="color:#006064">{{ n.ie }}</b>  <b>Espanha </b></h3>
+      <h3><b>Irã            </b> <b style="color:#006064">{{ n.ipo }}</b> <b>Portugal </b></h3>
+      <h3><b>Espanha        </b> <b style="color:#006064">{{ n.em }}</b>  <b>Marrocos </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo C</b> </h2>
+      <h3><b>França         </b> <b style="color:#006064">{{ n.fa }}</b>  <b>Aústralia </b></h3>
+      <h3><b>Peru           </b> <b style="color:#006064">{{ n.pd }}</b>  <b>Dinamarca </b></h3>
+      <h3><b>Dinamarca      </b> <b style="color:#006064">{{ n.da }}</b>  <b>Aústralia </b></h3>
+      <h3><b>França         </b> <b style="color:#006064">{{ n.fp }}</b>  <b>Peru </b></h3>
+      <h3><b>Aústralia      </b> <b style="color:#006064">{{ n.ap }}</b>  <b>Peru </b></h3>
+      <h3><b>Dinamarca      </b> <b style="color:#006064">{{ n.df }}</b>  <b>França </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo D</b> </h2>
+      <h3><b>Argentina      </b> <b style="color:#006064">{{ n.ai }}</b>  <b>Islândia </b></h3>
+      <h3><b>Croácia        </b> <b style="color:#006064">{{ n.cn }}</b>  <b>Nigéria </b></h3>
+      <h3><b>Argentina      </b> <b style="color:#006064">{{ n.ac }}</b>  <b>Croácia </b></h3>
+      <h3><b>Nigéria        </b> <b style="color:#006064">{{ n.ni }}</b>  <b>Islândia </b></h3>
+      <h3><b>Nigéria        </b> <b style="color:#006064">{{ n.na }}</b>  <b>Argentina </b></h3>
+      <h3><b>Islândia       </b> <b style="color:#006064">{{ n.ic }}</b>  <b>Croácia </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo E</b> </h2>
+      <h3><b>Costa Rica     </b> <b style="color:#006064">{{ n.cs }}</b>  <b>Sérvia </b></h3>
+      <h3><b>Brasil         </b> <b style="color:#006064">{{ n.bs }}</b>  <b>Suiça </b></h3>
+      <h3><b>Brasil         </b> <b style="color:#006064">{{ n.bc }}</b>  <b>Costa Rica </b></h3>
+      <h3><b>Sérvia         </b> <b style="color:#006064">{{ n.ss }}</b>  <b>Suiça </b></h3>
+      <h3><b>Sérvia         </b> <b style="color:#006064">{{ n.sb }}</b>  <b>Brasil </b></h3>
+      <h3><b>Suiça          </b> <b style="color:#006064">{{ n.sc }}</b>  <b>Costa Rica </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo F</b> </h2>
+      <h3><b>Alemanha       </b> <b style="color:#006064">{{ n.am }}</b>  <b>México </b></h3>
+      <h3><b>Suécia         </b> <b style="color:#006064">{{ n.suc }}</b> <b>Coreia do Sul </b></h3>
+      <h3><b>Coreia do Sul  </b> <b style="color:#006064">{{ n.cm }}</b>  <b>México </b></h3>
+      <h3><b>Alemanha       </b> <b style="color:#006064">{{ n.as }}</b>  <b>Suécia </b></h3>
+      <h3><b>Coreia do Sul  </b> <b style="color:#006064">{{ n.ca }}</b>  <b>Alemanha </b></h3>
+      <h3><b>México         </b> <b style="color:#006064">{{ n.ms }}</b>  <b>Suécia </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo G</b> </h2>
+      <h3><b>Bélgica        </b> <b style="color:#006064">{{ n.bp }}</b>  <b>Panamá </b></h3>
+      <h3><b>Tunísia        </b> <b style="color:#006064">{{ n.ti }}</b>  <b>Inglaterra </b></h3>
+      <h3><b>Bélgica        </b> <b style="color:#006064">{{ n.bt }}</b>  <b>Tunísia </b></h3>
+      <h3><b>Inglaterra     </b> <b style="color:#006064">{{ n.ip }}</b>  <b>Panamá </b></h3>
+      <h3><b>Inglaterra     </b> <b style="color:#006064">{{ n.ib }}</b>  <b>Bélgica </b></h3>
+      <h3><b>Panamá         </b> <b style="color:#006064">{{ n.pt }}</b>  <b>Tunísia </b></h3>
+      <h2 style="color:#069; text-align: center"> <b>Grupo H</b> </h2>
+      <h3><b>Colômbia       </b> <b style="color:#006064">{{ n.cj }}</b>  <b>Japão </b></h3>
+      <h3><b>Polônia        </b> <b style="color:#006064">{{ n.ps }}</b>  <b>Senegal </b></h3>
+      <h3><b>Japão          </b> <b style="color:#006064">{{ n.js }}</b>  <b>Senegal </b></h3>
+      <h3><b>Polônia        </b> <b style="color:#006064">{{ n.pc }}</b>  <b>Colômbia </b></h3>
+      <h3><b>Japão          </b> <b style="color:#006064">{{ n.jp }}</b>  <b>Polônia </b></h3>
+      <h3><b>Senegal        </b> <b style="color:#006064">{{ n.sec }}</b> <b>Colômbia </b></h3>
+        <button color="darken-4" ion-button (click)="Delete(n.id)">
+            <ion-icon name="trash"></ion-icon>
+        </button>
+    </ion-item>
+    <hr>
+  </ion-list>
+</ion-content>

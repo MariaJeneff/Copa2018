@@ -1,0 +1,458 @@
+<ion-header>
+
+  <ion-navbar color="darken-4">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Copa do mundo 2018
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="cards-bg social-cards">
+  <form>
+    <ion-list>
+    <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" name="nome" clearInput="true" [(ngModel)]="evento.nome" required></ion-input>
+    </ion-item>
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo A</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/arabia.jpg">
+          </ion-avatar>
+          <h2>Arábia Saudita</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/egito.jpg">
+          </ion-avatar>
+          <h2>Egito</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/russia.jpg">
+          </ion-avatar>
+          <h2>Rússia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/uruguai.jpg">
+          </ion-avatar>
+          <h2>Uruguai</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Rússia x Arábia Saudita</ion-label>
+          <ion-input type="text" name="ra" clearInput="true" [(ngModel)]="evento.ra" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Rússia x Egito</ion-label>
+          <ion-input type="text" name="re" clearInput="true" [(ngModel)]="evento.re" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Uruguai x Rússia</ion-label>
+          <ion-input type="text" name="ur" clearInput="true" [(ngModel)]="evento.ur" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Arábia Saudita x Egito</ion-label>
+          <ion-input type="text" name="ae" clearInput="true" [(ngModel)]="evento.ae" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Egito x Uruguai</ion-label>
+          <ion-input type="text" name="eu" clearInput="true" [(ngModel)]="evento.eu" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Uruguai x Arábia Saudita</ion-label>
+          <ion-input type="text" name="ua" clearInput="true" [(ngModel)]="evento.ua" required></ion-input>
+      </ion-item>
+
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo B</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/espanha.jpg">
+          </ion-avatar>
+          <h2>Espanha</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/ira.jpg">
+          </ion-avatar>
+          <h2>Irã</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/marrocos.jpg">
+          </ion-avatar>
+          <h2>Marrocos</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/portugal.jpg">
+          </ion-avatar>
+          <h2>Portugal</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Marrocos x Irã</ion-label>
+          <ion-input type="text" name="ma" clearInput="true" [(ngModel)]="evento.ma" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Portugal x Espanha</ion-label>
+          <ion-input type="text" name="pe" clearInput="true" [(ngModel)]="evento.pe" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Portugal x Marrocos</ion-label>
+          <ion-input type="text" name="pm" clearInput="true" [(ngModel)]="evento.pm" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Irã x Espanha</ion-label>
+          <ion-input type="text" name="ie" clearInput="true" [(ngModel)]="evento.ie" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Irã x Portugal</ion-label>
+          <ion-input type="text" name="ipo" clearInput="true" [(ngModel)]="evento.ipo" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Espanha x Marrocos</ion-label>
+          <ion-input type="text" name="em" clearInput="true" [(ngModel)]="evento.em" required></ion-input>
+      </ion-item>
+
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo C</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/australia.jpg">
+          </ion-avatar>
+          <h2>Aústralia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/dinamarca.jpg">
+          </ion-avatar>
+          <h2>Dinamarca</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/franca.jpg">
+          </ion-avatar>
+          <h2>França</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/peru.jpg">
+          </ion-avatar>
+          <h2>Peru</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>França x Aústralia</ion-label>
+          <ion-input type="text" name="fa" clearInput="true" [(ngModel)]="evento.fa" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Peru x Dinamarca</ion-label>
+          <ion-input type="text" name="pd" clearInput="true" [(ngModel)]="evento.pd" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Dinamarca x Aústralia</ion-label>
+          <ion-input type="text" name="da" clearInput="true" [(ngModel)]="evento.da" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>França x Peru</ion-label>
+          <ion-input type="text" name="fp" clearInput="true" [(ngModel)]="evento.fp" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Aústralia x Peru</ion-label>
+          <ion-input type="text" name="ap" clearInput="true" [(ngModel)]="evento.ap" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Dinamarca x França</ion-label>
+          <ion-input type="text" name="df" clearInput="true" [(ngModel)]="evento.df" required></ion-input>
+      </ion-item>
+
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo D</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/argentina.jpg">
+          </ion-avatar>
+          <h2>Argentina</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/croacia.jpg">
+          </ion-avatar>
+          <h2>Croácia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/islandia.jpg">
+          </ion-avatar>
+          <h2>Islândia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/nigeria.jpg">
+          </ion-avatar>
+          <h2>Nigéria</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Argentina x Islândia</ion-label>
+          <ion-input type="text" name="ai" clearInput="true" [(ngModel)]="evento.ai" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Croácia x Nigéria</ion-label>
+          <ion-input type="text" name="cn" clearInput="true" [(ngModel)]="evento.cn" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Argentina x Croácia</ion-label>
+          <ion-input type="text" name="ac" clearInput="true" [(ngModel)]="evento.ac" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Nigéria x Islândia</ion-label>
+          <ion-input type="text" name="ni" clearInput="true" [(ngModel)]="evento.ni" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Nigéria x Argentina</ion-label>
+          <ion-input type="text" name="na" clearInput="true" [(ngModel)]="evento.na" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Islândia x Croácia</ion-label>
+          <ion-input type="text" name="ic" clearInput="true" [(ngModel)]="evento.ic" required></ion-input>
+      </ion-item>
+
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo E</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/Brasil.jpg">
+          </ion-avatar>
+          <h2>Brasil</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/costa-rica.jpg">
+          </ion-avatar>
+          <h2>Costa Rica</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/servia.jpg">
+          </ion-avatar>
+          <h2>Sérvia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/suica.jpg">
+          </ion-avatar>
+          <h2>Suiça</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Costa Rica x Sérvia</ion-label>
+          <ion-input type="text" name="cs" clearInput="true" [(ngModel)]="evento.cs" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Brasil x Suiça</ion-label>
+          <ion-input type="text" name="bs" clearInput="true" [(ngModel)]="evento.bs" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Brasil x Costa Rica</ion-label>
+          <ion-input type="text" name="bc" clearInput="true" [(ngModel)]="evento.bc" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Sérvia x Suiça</ion-label>
+          <ion-input type="text" name="ss" clearInput="true" [(ngModel)]="evento.ss" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Sérvia x Brasil</ion-label>
+          <ion-input type="text" name="sb" clearInput="true" [(ngModel)]="evento.sb" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Suiça x Costa Rica</ion-label>
+          <ion-input type="text" name="sc" clearInput="true" [(ngModel)]="evento.sc" required></ion-input>
+      </ion-item>
+      
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo F</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/alemanha.jpg">
+          </ion-avatar>
+          <h2>Alemanha</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/coreia.jpg">
+          </ion-avatar>
+          <h2>Coreia do Sul</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/mexico.jpg">
+          </ion-avatar>
+          <h2>México</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/suecia.jpg">
+          </ion-avatar>
+          <h2>Suécia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Alemanha x México</ion-label>
+          <ion-input type="text" name="am" clearInput="true" [(ngModel)]="evento.am" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Suécia x Coreia do Sul</ion-label>
+          <ion-input type="text" name="suc" clearInput="true" [(ngModel)]="evento.suc" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Coreia do Sul x México</ion-label>
+          <ion-input type="text" name="cm" clearInput="true" [(ngModel)]="evento.cm" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Alemanha x Suécia</ion-label>
+          <ion-input type="text" name="as" clearInput="true" [(ngModel)]="evento.as" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Coreia do Sul x Alemanha</ion-label>
+          <ion-input type="text" name="ca" clearInput="true" [(ngModel)]="evento.ca" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>México x Suécia</ion-label>
+          <ion-input type="text" name="ms" clearInput="true" [(ngModel)]="evento.ms" required></ion-input>
+      </ion-item>
+            
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo G</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/belgica.jpg">
+          </ion-avatar>
+          <h2>Bélgica</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/inglaterra.jpg">
+          </ion-avatar>
+          <h2>Inglaterra</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/panama.jpg">
+          </ion-avatar>
+          <h2>Panamá</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/tunisia.jpg">
+          </ion-avatar>
+          <h2>Tunísia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Bélgica x Panamá</ion-label>
+          <ion-input type="text" name="bp" clearInput="true" [(ngModel)]="evento.bp" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Tunísia x Inglaterra</ion-label>
+          <ion-input type="text" name="ti" clearInput="true" [(ngModel)]="evento.ti" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Bélgica x Tunísia</ion-label>
+          <ion-input type="text" name="bt" clearInput="true" [(ngModel)]="evento.bt" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Inglaterra x Panamá</ion-label>
+          <ion-input type="text" name="ip" clearInput="true" [(ngModel)]="evento.ip" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Inglaterra x Bélgica</ion-label>
+          <ion-input type="text" name="ib" clearInput="true" [(ngModel)]="evento.ib" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Panamá x Tunísia</ion-label>
+          <ion-input type="text" name="pt" clearInput="true" [(ngModel)]="evento.pt" required></ion-input>
+      </ion-item>
+                 
+      <br>
+      
+      <ion-item>
+          <h2 style="color:#069; text-align: center"><b>Grupo H</b></h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/colombia.jpg">
+          </ion-avatar>
+          <h2>Colômbia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/japao.jpg">
+          </ion-avatar>
+          <h2>Japão</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/polonia.jpg">
+          </ion-avatar>
+          <h2>Polônia</h2>
+      </ion-item>
+      <ion-item>
+          <ion-avatar item-start>
+            <img class="img" src="../../assets/imgs/senegal.jpg">
+          </ion-avatar>
+          <h2>Senegal</h2>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Colômbia x Japão</ion-label>
+          <ion-input type="text" name="cj" clearInput="true" [(ngModel)]="evento.cj" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Polônia x Senegal</ion-label>
+          <ion-input type="text" name="ps" clearInput="true" [(ngModel)]="evento.ps" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Japão x Senegal</ion-label>
+          <ion-input type="text" name="js" clearInput="true" [(ngModel)]="evento.js" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Polônia x Colômbia</ion-label>
+          <ion-input type="text" name="pc" clearInput="true" [(ngModel)]="evento.pc" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Japão x Polônia</ion-label>
+          <ion-input type="text" name="jp" clearInput="true" [(ngModel)]="evento.jp" required></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Senegal x Colômbia</ion-label>
+          <ion-input type="text" name="sec" clearInput="true" [(ngModel)]="evento.sec" required></ion-input>
+      </ion-item>
+    </ion-list>  
+    <button color="darken-4" type="submit" ion-button block full icon-left (click)="GoCadastrar(evento)">
+        <ion-icon name="send"></ion-icon>Enviar Palpite
+    </button>
+    <button color="secondary" type="submit" ion-button block full icon-left (click)="GoVer()">
+        <ion-icon name="eye"></ion-icon>Ver Palpites
+    </button>  
+  </form>   
+</ion-content>

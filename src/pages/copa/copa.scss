@@ -1,0 +1,21 @@
+page-copa {
+    .img{
+        max-width: 50px;
+        min-width: 50px;
+        max-height: 50px;
+        min-height: 50px;
+        border-radius: 100%;
+    }
+    .pos{
+        display: inline;
+    }
+    button{
+        position: relative;
+        right: -15px; 
+        max-width: 90%;
+        min-width: 90%;
+    }
+    h3{
+        padding: 15px;
+    }
+}

@@ -1,0 +1,63 @@
+{
+  "dbApp": [
+    {
+      "id": 1,
+      "nome": "Josimar",
+      "email": "josimar@gmail.com",
+      "sexo": "Masculino",
+      "senha": "qwertyuiop"
+    },
+    {
+      "nome": "Maria Jeneff",
+      "email": "jeneff@hotmail.com",
+      "sexo": "Feminino",
+      "senha": "jeneff",
+      "id": 2
+    },
+    {
+      "nome": "Neo",
+      "email": "neo@gmail.com",
+      "sexo": "Masculino",
+      "senha": "neo",
+      "id": 3
+    },
+    {
+      "nome": "João Marcos",
+      "email": "joao@gmail.com",
+      "sexo": "Masculino",
+      "senha": "joao",
+      "id": 4
+    }
+  ]
+}{
+  "dbApp": [
+    {
+      "id": 1,
+      "nome": "Josimar",
+      "email": "josimar@gmail.com",
+      "sexo": "Masculino",
+      "senha": "qwertyuiop"
+    },
+    {
+      "nome": "Maria Jeneff",
+      "email": "jeneff@hotmail.com",
+      "sexo": "Feminino",
+      "senha": "jeneff",
+      "id": 2
+    },
+    {
+      "nome": "Neo",
+      "email": "neo@gmail.com",
+      "sexo": "Masculino",
+      "senha": "neo",
+      "id": 3
+    },
+    {
+      "nome": "João Marcos",
+      "email": "joao@gmail.com",
+      "sexo": "Masculino",
+      "senha": "joao",
+      "id": 4
+    }
+  ]
+}

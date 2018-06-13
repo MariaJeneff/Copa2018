@@ -1,0 +1,215 @@
+<ion-header>
+
+  <ion-navbar color="darken-4">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Programação</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="cards-bg social-cards">
+    <ion-list>
+        <ion-item *ngFor="let n of dados">
+          <h2 style="color:#069; text-align: center"> <b>1ª Rodada</b> </h2>
+          <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 14/06 às 12:00</b> </h6>
+          <h2><b>Rússia         </b> <b style="color:#006064">{{ n.pa }}</b>  <b>Arábia Saudita</b></h2>
+          </ion-item>
+          <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sexta-Feira, 15/06 às 09:00</b> </h6>
+          <h2><b>Egito          </b> <b style="color:#006064">{{ n.pb }}</b>  <b>Uruguai </b></h2>
+          </ion-item>
+          <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sexta-Feira, 15/06 às 12:00</b> </h6>
+          <h2><b>Marrocos       </b> <b style="color:#006064">{{ n.pc }}</b>  <b>Irã </b></h2>
+          </ion-item>
+          <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sexta-Feira, 15/06 às 15:00</b> </h6>
+          <h2><b>Portugal       </b> <b style="color:#006064">{{ n.pd }}</b>  <b>Espanha </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 16/06 às 07:00</b> </h6>
+          <h2><b>França         </b> <b style="color:#006064">{{ n.pe }}</b>  <b>Aústralia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 16/06 às 10:00</b> </h6>
+          <h2><b>Argentina      </b> <b style="color:#006064">{{ n.pf }}</b>  <b>Islândia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 16/06 às 13:00</b> </h6>
+          <h2><b>Peru           </b> <b style="color:#006064">{{ n.pg }}</b>  <b>Dinamarca </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 16/06 às 14:00</b> </h6>
+          <h2><b>Croácia        </b> <b style="color:#006064">{{ n.ph }}</b>  <b>Nigéria </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Domingo, 17/06 às 09:00</b> </h6>
+          <h2><b>Costa Rica     </b> <b style="color:#006064">{{ n.pi }}</b>  <b>Sérvia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Domingo, 17/06 às 12:00</b> </h6>
+          <h2><b>Alemanha       </b> <b style="color:#006064">{{ n.pj }}</b>  <b>México </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Domingo, 17/06 às 15:00</b> </h6>
+          <h2><b>Brasil         </b> <b style="color:#006064">{{ n.pk }}</b>  <b>Suiça </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 18/06 às 09:00</b> </h6>
+          <h2><b>Suécia         </b> <b style="color:#006064">{{ n.pl }}</b> <b>Coreia do Sul </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 18/06 às 12:00</b> </h6>
+          <h2><b>Bélgica        </b> <b style="color:#006064">{{ n.pm }}</b>  <b>Panamá </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 18/06 às 15:00</b> </h6>
+          <h2><b>Tunísia        </b> <b style="color:#006064">{{ n.pn }}</b>  <b>Inglaterra </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Terça-Feira, 19/06 às 09:00</b> </h6>
+          <h2><b>Colômbia       </b> <b style="color:#006064">{{ n.po }}</b>  <b>Japão </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Terça-Feira, 19/06 às 12:00</b> </h6>
+          <h2><b>Polônia        </b> <b style="color:#006064">{{ n.pp }}</b>  <b>Senegal </b></h2>
+        </ion-item>
+          <h2 style="color:#069; text-align: center"> <b>2ª Rodada</b> </h2>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Terça-Feira, 19/06 às 15:00</b> </h6>
+          <h2><b>Rússia         </b> <b style="color:#006064">{{ n.sa }}</b>  <b>Egito </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 20/06 às 09:00</b> </h6>
+          <h2><b>Portugal       </b> <b style="color:#006064">{{ n.sb }}</b>  <b>Marrocos </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 20/06 às 12:00</b> </h6>
+          <h2><b>Uruguai        </b> <b style="color:#006064">{{ n.sc }}</b>  <b>Arábia Saudita </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 20/06 às 15:00</b> </h6>
+          <h2><b>Irã            </b> <b style="color:#006064">{{ n.sd }}</b>  <b>Espanha </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 21/06 às 09:00</b> </h6>
+          <h2><b>Dinamarca      </b> <b style="color:#006064">{{ n.se }}</b>  <b>Aústralia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 21/06 às 12:00</b> </h6>
+          <h2><b>França         </b> <b style="color:#006064">{{ n.sf }}</b>  <b>Peru </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 21/06 às 15:00</b> </h6>
+          <h2><b>Argentina      </b> <b style="color:#006064">{{ n.sg }}</b>  <b>Croácia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sexta-Feira, 22/06 às 09:00</b> </h6>
+          <h2><b>Brasil         </b> <b style="color:#006064">{{ n.sh }}</b>  <b>Costa Rica </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sexta-Feira, 22/06 às 12:00</b> </h6>
+          <h2><b>Nigéria        </b> <b style="color:#006064">{{ n.si }}</b>  <b>Islândia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sexta-Feira, 22/06 às 15:00</b> </h6>
+          <h2><b>Sérvia         </b> <b style="color:#006064">{{ n.sj }}</b>  <b>Suiça </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 23/06 às 09:00</b> </h6>
+          <h2><b>Bélgica        </b> <b style="color:#006064">{{ n.sk }}</b>  <b>Tunísia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 23/06 às 12:00</b> </h6>
+          <h2><b>Coreia do Sul  </b> <b style="color:#006064">{{ n.sl }}</b>  <b>México </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Sábado, 23/06 às 15:00</b> </h6>
+          <h2><b>Alemanha       </b> <b style="color:#006064">{{ n.sm }}</b>  <b>Suécia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Domingo, 24/06 às 09:00</b> </h6>
+          <h2><b>Inglaterra     </b> <b style="color:#006064">{{ n.sn }}</b>  <b>Panamá </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Domingo, 24/06 às 12:00</b> </h6>
+          <h2><b>Japão          </b> <b style="color:#006064">{{ n.so }}</b>  <b>Senegal </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Domingo, 24/06 às 15:00</b> </h6>
+          <h2><b>Polônia        </b> <b style="color:#006064">{{ n.sp }}</b>  <b>Colômbia </b></h2>
+        </ion-item>
+
+          <h2 style="color:#069; text-align: center"> <b>3ª Rodada</b> </h2>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 25/06 às 11:00</b> </h6>
+          <h2><b>Arábia Saudita </b> <b style="color:#006064">{{ n.ta }}</b>  <b>Egito </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 25/06 às 11:00</b> </h6>
+          <h2><b>Uruguai        </b> <b style="color:#006064">{{ n.tb }}</b>  <b>Rússia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 25/06 às 15:00</b> </h6>
+          <h2><b>Irã            </b> <b style="color:#006064">{{ n.tc }}</b> <b>Portugal </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Segunda-Feira, 25/06 às 15:00</b> </h6>
+          <h2><b>Espanha        </b> <b style="color:#006064">{{ n.td }}</b>  <b>Marrocos </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Terça-Feira, 26/06 às 11:00</b> </h6>
+          <h2><b>Aústralia      </b> <b style="color:#006064">{{ n.te }}</b>  <b>Peru </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Terça-Feira, 26/06 às 11:00</b> </h6>
+          <h2><b>Dinamarca      </b> <b style="color:#006064">{{ n.tf }}</b>  <b>França </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Terça-Feira, 26/06 às 15:00</b> </h6>
+          <h2><b>Nigéria        </b> <b style="color:#006064">{{ n.tg }}</b>  <b>Argentina </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 26/06 às 15:00</b> </h6>
+          <h2><b>Islândia       </b> <b style="color:#006064">{{ n.th }}</b>  <b>Croácia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 27/06 às 11:00</b> </h6>
+          <h2><b>México         </b> <b style="color:#006064">{{ n.ti }}</b>  <b>Suécia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 27/06 às 11:00</b> </h6>
+          <h2><b>Coreia do Sul  </b> <b style="color:#006064">{{ n.tj }}</b>  <b>Alemanha </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 27/06 às 15:00</b> </h6>
+          <h2><b>Suiça          </b> <b style="color:#006064">{{ n.tk }}</b>  <b>Costa Rica </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quarta-Feira, 27/06 às 15:00</b> </h6>
+          <h2><b>Sérvia         </b> <b style="color:#006064">{{ n.tl }}</b>  <b>Brasil </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 28/06 às 11:00</b> </h6>
+          <h2><b>Senegal        </b> <b style="color:#006064">{{ n.tm }}</b> <b>Colômbia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 28/06 às 11:00</b> </h6>
+          <h2><b>Japão          </b> <b style="color:#006064">{{ n.tn }}</b>  <b>Polônia </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 28/06 às 15:00</b> </h6>
+          <h2><b>Inglaterra     </b> <b style="color:#006064">{{ n.to }}</b>  <b>Bélgica </b></h2>
+        </ion-item>
+        <ion-item>
+          <h6 style="color:#311b92; text-align: left;"> <b>Quinta-Feira, 28/06 às 15:00</b> </h6>
+          <h2><b>Panamá         </b> <b style="color:#006064">{{ n.tp }}</b>  <b>Tunísia </b></h2>    
+        </ion-item>
+        </ion-item>
+        <hr>
+      </ion-list> 
+</ion-content>
