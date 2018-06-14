@@ -4,7 +4,6 @@ import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angu
 import { VercopaPage } from '../vercopa/vercopa';
 import 'rxjs/add/operator/map';
 
-
 @IonicPage()
 @Component({
   selector: 'page-copa',
